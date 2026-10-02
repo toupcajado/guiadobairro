@@ -920,7 +920,7 @@
             closeModal('plansModal');
 
             const isPremium = planKey === 'premium';
-            const basePrice = isPremium ? 59.90 : 29.90;
+            const basePrice = isPremium ? 59.90 : 0.00;
             const isAnnual = billingCycle === 'annual';
             const discount = isAnnual ? basePrice * 0.20 : 0;
             const totalPrice = basePrice - discount;
